@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/yazaxuxona/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+  <title>Studylit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Studylit.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style id="jsbin-css">
+.study {
+    background-color: blue;
+    opacity: .8;
+}
+
+ul > li > a:visited {
+    text-decoration: none;
+    color:white;
+  }
+  
+  ul > li > a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 645;
+  }
+
+  ul > li > a:active {
+    text-decoration: none;
+    color:rgb(253, 253, 253); 
+  }
+  ul > li > a:link{
+    text-decoration: none;
+    color:white;
+   }
+ .nav-item .nav-link.active{
+    
+    border-top: #FFFFFF;
+    border-right: #FFFFFF;
+    border-left: #FFFFFF;
+    border-bottom: 4px solid rgb(255, 255, 255); 
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: bolder; 
+    padding: 0,20px;  
+  
+}
+
+.tabitem{
+    font-weight: 500;
+}
+
+body > nav > div.container-fixed.study > ul > li {
+    margin-right: 45px;
+}
+
+.study > ul > li> a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+    @media screen and (max-width: 767px){
+ 
+      body > nav > div.container-fixed.study > ul > li:nth-child(1) > a{
+        display: none;
+      }
+     
+      body > nav > div.container-fixed.study > ul > li:nth-child(2) > a{
+        display: none;
+      }
+        body > nav > div.container-fixed.study > ul > li:nth-child(3) > a{
+          display: none;
+        }
+          body > nav > div.container-fixed.study > ul > li:nth-child(4) > a{
+            display: none;
+          }
+    
+          
+        }
+
+  
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+
+      background-color: #007bff;
+      
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: absolute;
+      top: 15%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #f0efef;
+      display: block;
+      transition: 0.3s;
+      font-weight:300 ;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+      font-weight: 600;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 35px;
+      font-size: 60px;
+      height: 10px;
+      text-decoration: none;
+    }
+    
+
+    #myNav > div > div {
+      margin-right: 0;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+
+    @media screen and (min-width: 768px) { 
+      .menuSmScreen {
+        display: none;
+      }
+      
+    }
+
+    #myNav > div > div {
+      display: block;
+      margin-right: 20px;
+    }
+
+    #myNav > div > div > a.nav-link.active {
+      padding-right: 8px;
+    }
+    #myNav > div > div > a {
+      padding-right: 8px;
+    }
+    #myNav > div {
+      margin-bottom: 100px;
+      bottom: 200px;
+}
+</style>
+</head>
+<body>
+ <nav>
+  <a style="font-size:175%; padding-bottom:2px;padding-left:10px;  padding-top:2px;" class="navbar-brand" href="#">Studylit</a>
+<div class="container-fixed study">
+  
+  <ul class=" nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active tabitem" data-toggle="tab" href="#study">Study</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link tabitem" data-toggle="tab" href="#test">Test</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link tabitem" data-toggle="tab" href="#challenge">Challenge</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link tabitem" data-toggle="tab" href="#forum">Forum</a>
+    </li>
+    <li class="nav-item menuSmScreen">
+      <span style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()">&#x22EE; </span>
+    </li>
+  </ul>          
+</div>
+
+
+
+<div id="myNav" class="overlay">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <div class="nav">
+        
+
+    <a class=" nav-link active" data-toggle="tab" href="#study" onclick="closeNav()">Study</a>
+      <a class=" nav-link" data-toggle="tab" href="#test" onclick="closeNav()">Test</a>
+      <a class="nav-link" data-toggle="tab" href="#challenge"onclick="closeNav()">Challenge</a>
+      <a class="nav-link" data-toggle="tab" href="#forum" onclick="closeNav()">Forum</a>
+      </ul>
+  </div>
+  </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+
+
+
+</nav>
+
+<div class="tab-content">
+
+
+  <div id="study" class="tab-pane active"><br>
+    <img style="width:100%; height:150px" src="studymodepic.jpg">
+  </div>
+
+
+  <div id="test" class="container tab-pane fade"><br>
+    <h3>TEST</h3>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+
+  <div id="challenge" class="container tab-pane fade"><br>
+    <h3>CHALLENGE</h3>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+  </div>
+
+
+  <div id="forum" class="container tab-pane fade"><br>
+    <h3>FORUM</h3>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

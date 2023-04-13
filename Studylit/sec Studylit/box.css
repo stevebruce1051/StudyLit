@@ -1,0 +1,26 @@
+.box {
+border: 0px solid black;
+width : 88%;
+height: 600px;
+border-radius:10px;
+margin: 0% 6%;
+box-shadow: 5px 10px 18px #888888;
+-moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+      -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+      -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+
+}
+
+.textOnePic {
+height:40%;
+width: 100%;
+border-top-left-radius:inherit;
+border-top-right-radius:inherit;
+}
+
+.DebSaPe {
+text-align:center;
+font-size:20px;
+margin-top:28px;
+font-weight:600;
+}

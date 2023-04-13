@@ -1,0 +1,581 @@
+* {
+top:0;
+}
+
+.navbar-brand {
+  font-family: cursive;
+}
+ nav {
+position: fixed;
+z-index: 999;
+width: 100%
+}
+
+.study {
+    background-color: blue;
+    opacity: 80%;
+}
+
+
+nav> div> ul > li > a:visited {
+    text-decoration: none;
+    color:white;
+  }
+  
+  nav> div> ul > li > a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 645;
+  }
+
+  nav> div> ul > li > a:active {
+    text-decoration: none;
+    color:rgb(253, 253, 253); 
+  }
+ nav> div> ul > li > a:link{
+    text-decoration: none;
+    color:white;
+     opacity: 100%;
+   }
+ .nav-item .nav-link.active{
+    
+    border-top: #FFFFFF;
+    border-right: #FFFFFF;
+    border-left: #FFFFFF;
+    border-bottom: 4px solid rgb(255, 255, 255); 
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: bolder; 
+    padding: 0,20px;  
+  
+}
+
+.tabitem{
+    font-weight: 500;
+}
+
+body > nav > div.container-fixed.study > ul > li {
+    margin-right: 45px;
+}
+
+.study > ul > li> a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+  
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+
+      background-color: #007bff;
+      
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: absolute;
+      top: 15%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #f0efef;
+      display: block;
+      transition: 0.3s;
+      font-weight:300 ;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+      font-weight: 600;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 35px;
+      font-size: 60px;
+      height: 10px;
+      text-decoration: none;
+    }
+    
+
+    #myNav > div > div {
+      margin-right: 0;
+    }
+
+   @media screen and (max-height: 450px){
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+.studyPic {
+width:100%; 
+height:300px;
+}
+
+    
+    }
+    @media screen and (min-width: 1200px) {
+      .menuSmScreen {
+        display: none;
+      }
+      .studyPic {
+        width:100%; 
+        height:100vh;
+      }
+
+      .studyLiteratureText {
+        position: absolute;
+        color: white; 
+        top: 38%;
+        margin-left:26%;
+        margin-right:26%;
+        width: 48%; 
+        text-align: center;
+      }
+      
+      #hrline {
+        position: absolute; 
+        margin-top: 0; 
+        margin-bottom: 0; 
+        color: white; 
+        top: 47%; 
+        width: 27px; 
+        margin-left:48%; 
+        margin-right:48% ; 
+        height: 10px; 
+        border-bottom: 4px solid white;
+      }
+      #smTextStudy {
+        font-size: 25px;
+        
+        font-weight: 320;
+        text-align: center;
+        right: 0;
+        left: 0;
+        top: 52%;
+        margin-left:30% ;
+        margin-right: 30%;
+        width:40% ;
+        position: absolute;
+        color: white;
+      }
+      #study {
+        margin-top: 0;
+      }
+    } 
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+      .menuSmScreen {
+        display: none;
+      }
+      .studyPic {
+        width:100%; 
+        height:450px;
+      }
+
+      .studyLiteratureText {
+        position: absolute;
+        color: white; 
+        top: 24.7%;
+        margin-left:26%;
+        margin-right:26%;
+        width: 48%; 
+        text-align: center;
+      }
+      
+      #hrline {
+        position: absolute; 
+        margin-top: 0; 
+        margin-bottom: 0; 
+        color: white; 
+        top: 34.7%; 
+        width: 27px; 
+        margin-left:48%; 
+        margin-right:48% ; 
+        height: 10px; 
+        border-bottom: 4px solid white;
+      }
+      #smTextStudy {
+        font-size: 25px;
+        
+        font-weight: 320;
+        text-align: center;
+        right: 0;
+        left: 0;
+        top: 39%;
+        margin-left:30% ;
+        margin-right: 30%;
+        width:40% ;
+        position: absolute;
+        color: white;
+      }
+    }
+    @media screen and (max-width: 767px){
+ 
+      body > nav > div.container-fixed.study > ul > li:nth-child(1) > a{
+        display: none;
+      }
+     
+      body > nav > div.container-fixed.study > ul > li:nth-child(2) > a{
+        display: none;
+      }
+        body > nav > div.container-fixed.study > ul > li:nth-child(3) > a{
+          display: none;
+        }
+          body > nav > div.container-fixed.study > ul > li:nth-child(4) > a{
+            display: none;
+          }
+    
+          .studyPic {
+            width: 100%;
+            height: 480px;
+          }
+          .studyLiteratureText {
+            position: absolute;
+            color: white; 
+            top: 18%;
+            margin-left:26%;
+            margin-right:26%;
+            width: 48%; 
+            text-align: center;
+            
+          }
+
+          @media screen and (min-device-width: 601px) and (max-device-width: 780px) { 
+            .studyLiteratureText {
+              max-width: 4.6cm;
+              margin-right: 36%;
+              margin-left: 36%;
+              right: 0;
+              left: 0;
+              text-align: center;
+            }
+        }
+
+        
+        @media screen and (min-device-width: 736px) and (max-device-width: 768px) { 
+          .studyLiteratureText {
+            max-width: 4.6cm;
+            margin-right: 30%;
+            margin-left: 38%;
+            right: 0;
+            left: 0;
+            text-align: center;
+          }
+      }
+          #hrline {
+            position: absolute; 
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: white; 
+            top: 38.5%; 
+            width: 27px; 
+            margin-left:48%; 
+            margin-right:48% ; 
+            height: 10px; 
+            border-bottom: 4px solid white;
+          }
+
+          #smTextStudy {
+            font-size: 19px;
+            max-width: 500px;
+            font-weight: 320;
+            text-align: center;
+            right: 0;
+            top: 44%;
+            margin-left:10% ;
+            margin-right: 10%;
+            width:80% ;
+            position: absolute;
+            color: white;
+          }
+          .search-box:hover > .search-txt{
+            width: 100px;
+            padding: 0 6px;
+            top: 50px;
+          }
+        }
+
+    #myNav > div > div {
+      display: block;
+      margin-right: 20px;
+    }
+
+    #myNav > div > div > a.nav-link.active {
+      padding-right: 8px;
+    }
+    #myNav > div > div > a {
+      padding-right: 8px;
+    }
+    #myNav > div {
+      margin-bottom: 100px;
+      bottom: 200px;
+    }
+
+.space {
+margin-top:90px;
+}
+
+
+#overlay {
+  display: show;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.search-box{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: none;
+  height: 60px;
+  border-radius: 40px;
+  padding: 10px;
+ flex-wrap: nowrap;
+ display:inline;
+ 
+
+}
+
+
+@media screen and (min-width: 767px){
+.search-box:hover > .search-txt{
+  width: 100px;
+  padding: 0 6px;
+  top: 50px;
+}
+}
+
+.search-box:hover {
+  width:250px;
+  background: white;
+  border: none;
+}
+.search-box:hover > .search-btn{
+ background: blue;
+ color: white;
+ text-decoration: none;
+ display: flex;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+   }
+ .search-box:hover > .search-txt {
+     color: rgb(50, 50, 97);
+   }
+.search-btn{
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.search-txt{
+border: none;
+background: none;
+outline: none;
+float: left;
+padding: 0;
+color: white;
+font-size: 16px;
+transition: 0.4s;   
+line-height: 40px;
+width: 0px;
+}
+
+.box {
+  border: 0px solid black;
+  width : 88%;
+  height: 600px;
+  border-radius:10px;
+  margin: 0% 6%;
+  /*box-shadow: 5px 10px 18px #888888;
+  -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+        -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);*/
+  background-color: white;
+  margin-bottom: 35px;
+  
+  }
+
+  @media screen and (max-width: 361px){
+    .box {
+      height: 620px;
+    }
+  }
+  
+  .textOnePic {
+  height:40%;
+  width: 100%;
+  border-top-left-radius:inherit;
+  border-top-right-radius:inherit;
+  }
+  
+  .DebSaPe {
+  text-align:center;
+  font-size:22px;
+  margin-top:28px;
+  font-weight:600;
+  color: rgb(75, 75, 75);
+  }
+  
+  .studyk {
+    background-color: #f5f3f3;
+  }
+  
+.summary {
+  width: 80%;
+  margin: 0 10% 0 10%;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width:80%;
+  margin: 0 10% 0 10%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+footer {
+  background-color: rgb(36, 16, 107);
+  color: white;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+.footerList {
+  display: inline-block;
+  text-align: center;
+
+}
+
+
+.footerUl {
+  width:80% ;
+  margin: 0 10% 0 10%;
+  padding-left: 0;
+  
+}
+
+.copyright {
+  font-size: 11px;
+  position: relative;
+  left: 0;
+  top:30%;
+}
+
+footer {
+  position: relative;
+}
+
+.footerList a:visited {
+  text-decoration: none;
+  color:white;
+}
+
+.footerList a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.footerList a:active {
+  text-decoration: none;
+  color:rgb(253, 253, 253); 
+}
+.footerList a:link{
+  text-decoration: none;
+  color:white;
+   opacity: 100%;
+ }
+
+ .TestImgTxt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 680%;
+  color: white ;
+  background-color: rgb(84, 86, 184, 0.4);
+  background-size: 200px 120px;
+  height: inherit;
+  width: 100%;
+}
+
+.textself {
+  position: relative;
+  margin-top: 0;
+}
+
+ .parallax {
+  /* The image used */
+  background-image: url("Test.png");
+  /* Set a specific height */
+  min-height: 150px; 
+  top: 0;
+  position: relative;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.testbutton {
+  max-height: 15px ;
+  width: 100%;
+  font-size: 20px;
+  top:20px;
+  position: relative;
+}
+
+#testhrline { 
+margin-top: 5px; 
+margin-bottom: 15px;   
+width: 100%;  
+height: 10px; 
+}
+
+#test > div.container > a {
+  text-decoration: none;
+  color: #212529;
+}
